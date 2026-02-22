@@ -221,7 +221,7 @@ git clone https://github.com/Azornes/Comfyui-Resolution-Master
 git clone https://github.com/melMass/comfy_mtb
 git clone https://github.com/pythongosssss/ComfyUI-Custom-Scripts
 git clone https://github.com/yolain/ComfyUI-Easy-Use
-# git clone https://github.com/ltdrdata/ComfyUI-Impact-Pack
+git clone https://github.com/ltdrdata/ComfyUI-Impact-Pack
 git clone https://github.com/ltdrdata/ComfyUI-Inspire-Pack
 git clone https://github.com/1038lab/ComfyUI-RMBG
 git clone https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite
@@ -235,13 +235,13 @@ git clone https://github.com/rgthree/rgthree-comfy
 git clone https://github.com/ltdrdata/was-node-suite-comfyui
 git clone https://github.com/evanspearman/ComfyMath
 git clone https://github.com/djbielejeski/a-person-mask-generator
-#git clone https://github.com/Fannovel16/ComfyUI-Frame-Interpolation
+git clone https://github.com/Fannovel16/ComfyUI-Frame-Interpolation
 git clone https://github.com/calcuis/gguf
-# git clone https://github.com/pollockjj/ComfyUI-MultiGPU
+git clone https://github.com/pollockjj/ComfyUI-MultiGPU
 git clone https://github.com/1038lab/ComfyUI-QwenVL
 git clone https://github.com/kijai/ComfyUI-SCAIL-Pose
 git clone https://github.com/kijai/ComfyUI-WanAnimatePreprocess/
-#git clone https://github.com/ClownsharkBatwing/RES4LYF
+git clone https://github.com/ClownsharkBatwing/RES4LYF
 git clone https://github.com/Lightricks/ComfyUI-LTXVideo
 git clone https://github.com/akatz-ai/ComfyUI-DepthCrafter-Nodes
 
@@ -258,7 +258,7 @@ pip install -r /workspace/ComfyUI/custom_nodes/Comfyui-Resolution-Master/require
 pip install -r /workspace/ComfyUI/custom_nodes/comfy_mtb/requirements.txt
 pip install -r /workspace/ComfyUI/custom_nodes/ComfyUI-Custom-Scripts/requirements.txt
 pip install -r /workspace/ComfyUI/custom_nodes/ComfyUI-Easy-Use/requirements.txt
-#pip install -r /workspace/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/requirements.txt torch==2.8 torchvision torchaudio numpy==1.26.4
+pip install -r /workspace/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/requirements.txt torch==2.8 torchvision torchaudio numpy==1.26.4
 pip install -r /workspace/ComfyUI/custom_nodes/ComfyUI-Inspire-Pack/requirements.txt
 pip install -r /workspace/ComfyUI/custom_nodes/ComfyUI-RMBG/requirements.txt
 pip install -r /workspace/ComfyUI/custom_nodes/ComfyUI-VideoHelperSuite/requirements.txt
@@ -272,19 +272,23 @@ pip install -r /workspace/ComfyUI/custom_nodes/rgthree-comfy/requirements.txt
 pip install -r /workspace/ComfyUI/custom_nodes/was-node-suite-comfyui/requirements.txt
 pip install -r /workspace/ComfyUI/custom_nodes/ComfyMath/requirements.txt
 pip install -r /workspace/ComfyUI/custom_nodes/a-person-mask-generator/requirements.txt
-#pip install -r /workspace/ComfyUI/custom_nodes/ComfyUI-Frame-Interpolation/requirements.txt
+pip install -r /workspace/ComfyUI/custom_nodes/ComfyUI-Frame-Interpolation/requirements.txt
 pip install -r /workspace/ComfyUI/custom_nodes/gguf/requirements.txt
-#pip install -r /workspace/ComfyUI/custom_nodes/ComfyUI-MultiGPU/requirements.txt
+pip install -r /workspace/ComfyUI/custom_nodes/ComfyUI-MultiGPU/requirements.txt
 pip install -r /workspace/ComfyUI/custom_nodes/ComfyUI-QwenVL/requirements.txt
 pip install -r /workspace/ComfyUI/custom_nodes/ComfyUI-SCAIL-Pose/requirements.txt
 pip install -r /workspace/ComfyUI/custom_nodes/ComfyUI-WanAnimatePreprocess/requirements.txt
-#pip install -r /workspace/ComfyUI/custom_nodes/RES4LYF/requirements.txt
+pip install -r /workspace/ComfyUI/custom_nodes/RES4LYF/requirements.txt
 pip install -r /workspace/ComfyUI/custom_nodes/ComfyUI-LTXVideo/requirements.txt
 pip install -r /workspace/ComfyUI/custom_nodes/ComfyUI-DepthCrafter-Nodes/requirements.txt
 pip uninstall -y xformers
 
 cd /workspace
 echo "finished installing custom nodes requirements"
+
+echo "reinstalling numpy 1st time to ensure compatibility"
+pip install numpy==1.26.4
+echo "finished reinstalling numpy 1st time"
 
 echo "installing flash-attention 2 with --no-build-isolation"
 pip install flash-attn --no-build-isolation
@@ -294,9 +298,9 @@ echo "installing sageattention with --no-build-isolation"
 pip install sageattention --no-build-isolation
 echo "finished installing sageattention"
 
-echo "reinstalling numpy to ensure compatibility"
+echo "reinstalling numpy 2nd time to ensure compatibility"
 pip install numpy==1.26.4
-echo "finished reinstalling numpy"
+echo "finished reinstalling numpy 2nd time"
 
 echo "installing base requirements again to ensure all dependencies are met"
 pip install -r /workspace/ComfyUI/requirements.txt torch==2.8 torchvision torchaudio numpy==1.26.4
