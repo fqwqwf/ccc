@@ -221,7 +221,7 @@ git clone https://github.com/Azornes/Comfyui-Resolution-Master
 git clone https://github.com/melMass/comfy_mtb
 git clone https://github.com/pythongosssss/ComfyUI-Custom-Scripts
 git clone https://github.com/yolain/ComfyUI-Easy-Use
-git clone https://github.com/ltdrdata/ComfyUI-Impact-Pack
+#git clone https://github.com/ltdrdata/ComfyUI-Impact-Pack
 git clone https://github.com/ltdrdata/ComfyUI-Inspire-Pack
 git clone https://github.com/1038lab/ComfyUI-RMBG
 git clone https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite
@@ -241,7 +241,7 @@ git clone https://github.com/pollockjj/ComfyUI-MultiGPU
 git clone https://github.com/1038lab/ComfyUI-QwenVL
 git clone https://github.com/kijai/ComfyUI-SCAIL-Pose
 git clone https://github.com/kijai/ComfyUI-WanAnimatePreprocess/
-git clone https://github.com/ClownsharkBatwing/RES4LYF
+#git clone https://github.com/ClownsharkBatwing/RES4LYF
 git clone https://github.com/Lightricks/ComfyUI-LTXVideo
 git clone https://github.com/akatz-ai/ComfyUI-DepthCrafter-Nodes
 
@@ -258,7 +258,7 @@ pip install -r /workspace/ComfyUI/custom_nodes/Comfyui-Resolution-Master/require
 pip install -r /workspace/ComfyUI/custom_nodes/comfy_mtb/requirements.txt
 pip install -r /workspace/ComfyUI/custom_nodes/ComfyUI-Custom-Scripts/requirements.txt
 pip install -r /workspace/ComfyUI/custom_nodes/ComfyUI-Easy-Use/requirements.txt
-pip install -r /workspace/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/requirements.txt torch==2.8 torchvision torchaudio numpy==1.26.4
+#pip install -r /workspace/ComfyUI/custom_nodes/ComfyUI-Impact-Pack/requirements.txt torch==2.8 torchvision torchaudio numpy==1.26.4
 pip install -r /workspace/ComfyUI/custom_nodes/ComfyUI-Inspire-Pack/requirements.txt
 pip install -r /workspace/ComfyUI/custom_nodes/ComfyUI-RMBG/requirements.txt
 pip install -r /workspace/ComfyUI/custom_nodes/ComfyUI-VideoHelperSuite/requirements.txt
@@ -278,7 +278,7 @@ pip install -r /workspace/ComfyUI/custom_nodes/ComfyUI-MultiGPU/requirements.txt
 pip install -r /workspace/ComfyUI/custom_nodes/ComfyUI-QwenVL/requirements.txt
 pip install -r /workspace/ComfyUI/custom_nodes/ComfyUI-SCAIL-Pose/requirements.txt
 pip install -r /workspace/ComfyUI/custom_nodes/ComfyUI-WanAnimatePreprocess/requirements.txt
-pip install -r /workspace/ComfyUI/custom_nodes/RES4LYF/requirements.txt
+#pip install -r /workspace/ComfyUI/custom_nodes/RES4LYF/requirements.txt
 pip install -r /workspace/ComfyUI/custom_nodes/ComfyUI-LTXVideo/requirements.txt
 pip install -r /workspace/ComfyUI/custom_nodes/ComfyUI-DepthCrafter-Nodes/requirements.txt
 pip uninstall -y xformers
@@ -332,12 +332,12 @@ hf download LVMCS/49108215MI --local-dir .
 rm -rf .cache/
 
 #MM
-hf download LVMCS/49108215MM --local-dir .
-rm -rf .cache/
+#hf download LVMCS/49108215MM --local-dir .
+#rm -rf .cache/
 
 #LT
-hf download LVMCS/49108215LT --local-dir .
-rm -rf .cache/
+#hf download LVMCS/49108215LT --local-dir .
+#rm -rf .cache/
 
 #KL
 #hf download LVMCS/49108215KL --local-dir .
@@ -348,8 +348,8 @@ rm -rf .cache/
 #rm -rf .cache/
 
 #QW
-hf download LVMCS/49108215QW --local-dir .
-rm -rf .cache/
+#hf download LVMCS/49108215QW --local-dir .
+#rm -rf .cache/
 
 echo "removing .cache folders to save space"
 cd /workspace
